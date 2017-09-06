@@ -2,11 +2,11 @@ const qiniu = require('qiniu')
 const sha1 = require('sha1')
 
 // 七牛提供的公钥
-const accessKey = 'JjO_ih1JuNJAKDT-cr5T10TSuBGyJf1hIMoFDtms'
+const accessKey = 'accessKey'
 // 七牛提供的私钥
-const secretKey = 'p9epjw9u2TMM8iMunYffFrLR2rfzykpCkPr8SDF5'
+const secretKey = 'secretKey'
 // 存储空间名
-const bucketName = 'cancss-cloud'
+const bucketName = 'bucketName'
 
 module.exports.upload = (req, res) => {
   // 文件名

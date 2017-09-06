@@ -17,11 +17,13 @@ npm install
 ```
 
 ### 启动工程
-- 融合模式启动 
+1. 工程端口 `8080`
+2. 融合模式启动
 ```bash
 npm start
 ```
-- nodemon模式启动
+##### 注: 此模式下启动即可上传文件
+3. nodemon模式启动
 ```bash
 npm run nodemon
 ```
@@ -37,3 +39,29 @@ npm run nodemon
 1. [直传文件](https://developer.qiniu.com/kodo/api/1312/upload)
 2. [上传凭证](https://developer.qiniu.com/kodo/manual/1208/upload-token)
 3. [Node.js SDK](https://developer.qiniu.com/kodo/sdk/1289/nodejs#5)
+
+### 后端
+1. [code](./server/upload.js)
+    > 注：启动项目前先将accessKey、secretKey、bucketName等参数替换成七牛为您提供的对应参数
+
+2. 接口请求方式
+```bash
+# request url
+curl --request GET \
+     --url 'http://localhost:8080/api/upload?fileName=123.png'
+
+# body
+{
+    "code": "1",
+    "desc": "ok",
+    "result": {
+        "bucketName": "bucket-name",
+        "fileName": "f90bad3c937d1dcdfc37.png",
+        "uploadToken": "JjO_ih1JuNJAKDT-cr5T10TSuBGyJf1"
+    }
+}
+```
+
+### 前端
+1. [code](./src/components/Upload.vue)
+    > 注：具体文档参考[element-ui upload](http://element.eleme.io/#/zh-CN/component/upload)

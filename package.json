@@ -12,6 +12,7 @@
     "nodemon": "nodemon build/server.js"
   },
   "dependencies": {
+    "element-ui": "^1.4.4",
     "koa": "^2.3.0",
     "qiniu": "^7.0.8",
     "vue": "^2.4.2",
@@ -49,10 +50,13 @@
     "opn": "^5.1.0",
     "optimize-css-assets-webpack-plugin": "^2.0.0",
     "ora": "^1.2.0",
+    "pug": "^2.0.0-rc.3",
     "rimraf": "^2.6.0",
     "semver": "^5.3.0",
     "sha1": "^1.1.1",
     "shelljs": "^0.7.6",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
     "url-loader": "^0.5.8",
     "vue-loader": "^13.0.4",
     "vue-style-loader": "^3.0.1",
