@@ -1,0 +1,13 @@
+{
+	"ignore": [
+    "src",
+    "bulid",
+		"node_modules/**/node_modules"
+	],
+	"verbose": true,
+	"watch": [
+    "config",
+  	"server"
+	],
+	"ext": "js json"
+}
